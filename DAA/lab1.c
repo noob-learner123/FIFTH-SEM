@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main() {
+    int n, i;
+    int t1 = 0, t2 = 1, nextTerm;
+    int sum = 0;
+
+    printf("Enter the number of terms: ");
+    scanf("%d", &n);
+
+    printf("Fibonacci Series: ");
+
+    for (i = 1; i <= n; i++) {
+        printf("%d ", t1);
+        sum += t1;   // add current term to sum
+
+        nextTerm = t1 + t2;
+        t1 = t2;
+        t2 = nextTerm;
+    }
+
+    printf("\nSum of Fibonacci series up to %d terms = %d\n", n, sum);
+
+    return 0;
+}
