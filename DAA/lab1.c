@@ -21,5 +21,7 @@ int main() {
 
     printf("\nSum of Fibonacci series up to %d terms = %d\n", n, sum);
 
+    printf(" BY RAMESH MAINALI \n ");
+
     return 0;
 }
